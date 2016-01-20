@@ -1,0 +1,147 @@
+<html>
+	<head>
+		<title>HTML Form Style</title>
+		<style>
+			fieldset { border: none; }
+			legend {
+					color: #ffffff;
+					font-size: 13px;
+					font-weight: bold;
+			}
+			form {
+					margin: 0;	
+			}
+			.formFieldBox {
+					background-color: rgba(255, 255, 255, 0.7);
+					border: 1px solid #e5e5e5;
+					border-radius: 3px;
+					font-size: 11px;
+					margin: 5px 0;
+					padding: 5px;
+			}
+			.formBtnBox {
+					background: transparent;
+					border: medium none;
+					text-align: center;
+			}
+			.formFieldBox span {
+					display: inline-block;
+					width: 95px;
+			}
+			.formFieldBox input, .formFieldBox textarea {
+					border: 1px solid #b5b5b5;
+					border-radius: 3px;
+					font-size: 11px;
+					margin: auto;
+					padding: 5px;
+					width: 200px;
+			}
+			.formFieldBox input[type="radio"] {
+					margin: 5px;
+					width: auto;
+			}
+			.formBtnBox {
+					background: transparent none repeat scroll 0 0;
+					border: medium none;
+					text-align: center;
+			}
+			.formBtnBox .formBtn {
+					background-color: #0854a5;
+					border: medium none;
+					border-radius: 30px;
+					color: #ffffff;
+					padding: 5px;
+					position: relative;
+					text-align: center;
+					width: 100px;
+			}
+			.formFieldBox .cardTypeSpan {
+					margin: 3px 15px 3px 10px;
+					text-align: center;
+					width: auto;
+			}
+			.formFieldBox .cardTypeLabel {
+					float: right;
+					margin: 4px 0;
+					width: auto;
+			}
+			.formFieldBox .cardTypeLabel > img {
+					float: left;
+			}
+			.formFieldBox .cardTypeLabel > label {
+					margin-left: 5px;
+			}
+		</style>
+	</head>
+	<body style="font-family: Arial;">
+		<div style="background: url('http://wallpaperswide.com/download/stars_galaxies-wallpaper-640x960.jpg') no-repeat center center transparent; height: auto; padding: 10px 2px; width: 400px;">
+			<form>
+				<fieldset>
+					<legend>Step 1: Your details</legend>
+					<div class="formFieldBox">
+						<span>Name</span><input type="text" placeholder="First and Last Name"/>
+					</div>
+					<div class="formFieldBox">
+						<span>Email</span><input type="email" placeholder="example@domain.com"/>
+					</div>
+					<div class="formFieldBox">
+						<span>Phone</span><input type="tel" placeholder="e.g. +447500000000"/>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Step 2: Delivery address</legend>
+					<div class="formFieldBox">
+						<span style="margin-top: -50px;">Address</span><textarea></textarea>
+					</div>
+					<div class="formFieldBox">
+						<span>Post code</span><input type="text"/>
+					</div>
+					<div class="formFieldBox">
+						<span>Country</span><input type="text"/>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Step 3: Card details</legend>
+					<div class="formFieldBox">
+						<span>Card type</span>
+						<div class="cardTypeBox">
+							<span class="cardTypeSpan">
+								<input type="radio" name="cardType"/>
+								<span class="cardTypeLabel">
+									<img src="http://mygate.co.za/images/logos/visa_logo.png" width="25px"/>
+									<label>VISA</label>
+								</span>
+							</span>
+							<span class="cardTypeSpan">
+								<input type="radio" name="cardType"/>
+								<span class="cardTypeLabel">
+									<img src="http://www.uscoachways.com/images/amex-logo-small.png" width="25px"/>
+									<label>AmEx</label>
+								</span>
+							</span>
+							<span class="cardTypeSpan">
+								<input type="radio" name="cardType"/>
+								<span class="cardTypeLabel">
+									<img src="http://www.mastercard.co.uk/_globalAssets/img/nav/navl_logo_mastercardcom.png" width="25px"/>
+									<label>Mastercard</label>
+								</span>
+							</span>
+						</div>
+					</div>
+					<div class="formFieldBox">
+						<span>Card number</span><input type="text"/>
+					</div>
+					<div class="formFieldBox">
+						<span>Security code</span><input type="text"/>
+					</div>
+					<div class="formFieldBox">
+						<span>Name on card</span><input type="text" placeholder="exact name as on the card"/>
+					</div>
+					<div class="formFieldBox formBtnBox">
+						<input class="formBtn" type="submit" value="BUY IT!">
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>
