@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gradients</title>
+		<style>
+			.boxWrapper {
+				margin: auto;
+    		width: 310px;
+			}
+			.box {
+				border-radius: 10px;
+				box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
+				display: inline-block;
+				height: 80px;
+				line-height: 80px;
+				margin: 0 10px;
+				position: relative;
+				text-align: center;
+				width: 80px;
+			}
+			.linearGradient {
+				background: linear-gradient(left, #FF0000, #00DD00);
+				background: -o-linear-gradient(left, #FF0000, #00DD00);
+				background: -ms-linear-gradient(left, #FF0000, #00DD00);
+				background: -moz-linear-gradient(left, #FF0000, #00DD00);
+				background: -webkit-linear-gradient(left, #FF0000, #00DD00);
+			}
+			.circleGradient {
+				background: radial-gradient(circle farthest-side at 50% 0, #ff0000, #ffff00, #00dd00);
+				background: -o-radial-gradient(circle farthest-side at 50% 0, #ff0000, #ffff00, #00dd00);
+				background: -ms-radial-gradient(circle farthest-side at 50% 0, #ff0000, #ffff00, #00dd00);
+				background: -moz-radial-gradient(circle farthest-side at 50% 0, #ff0000, #ffff00, #00dd00);
+				background: -webkit-radial-gradient(circle farthest-side at 50% 0, #ff0000, #ffff00, #00dd00);
+			}
+			.ellipseGradient {
+				background: radial-gradient(ellipse farthest-corner at 50% 0, #FF0000, #FFFF00, #00DD00);
+				background: -o-radial-gradient(ellipse farthest-corner at 50% 0, #FF0000, #FFFF00, #00DD00);
+				background: -ms-radial-gradient(ellipse farthest-corner at 50% 0, #FF0000, #FFFF00, #00DD00);
+				background: -moz-radial-gradient(ellipse farthest-corner at 50% 0, #FF0000, #FFFF00, #00DD00);
+				background: -webkit-radial-gradient(ellipse farthest-corner at 50% 0, #FF0000, #FFFF00, #00DD00);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="boxWrapper">
+			<div class="box linearGradient">Box</div>
+			<div class="box circleGradient">Box</div>
+			<div class="box ellipseGradient">Box</div>
+		</div>
+	</body>
+</html>
