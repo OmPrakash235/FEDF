@@ -1,6 +1,6 @@
 function calcCircleArea(r) {
 	var area;
-	area = r*r;
+	area = Math.PI*Math.pow(r,2);
 	document.body.innerHTML += '<div>r = ' + r + '; ' + 'a = ' + area + '</div><br/>';
 }
 
