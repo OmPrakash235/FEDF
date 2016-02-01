@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>Min and Max Numbers</title>
+	</head>
+	<body>
+		<div>Array : [<span id="array"></span>]</div>
+		<div>Max no. is: <span id="max"></span></div>
+		<div>Min no. is: <span id="min"></span></div>
+	</body>
+	<script>
+		var arr = [12,54,63,23,32];
+		
+		function printArray() {
+			var a = "";
+			var temp = "";
+
+			for(i=0;i<5;i++){
+				var temp = arr[i].toString();
+				var a = a.concat(temp);
+				if(i!=4){
+					var a = a.concat(', ');
+				}
+			}
+			document.getElementById('array').innerHTML = a;
+		}
+		
+		function maxNum() {
+			var max = arr[0], curr = arr[0];
+			for(i=0;i<5;i++){
+				curr = arr[i];
+				if(curr>max){
+					max=curr;
+				}
+			}
+			document.getElementById('max').innerHTML = max;
+		}
+		
+		function minNum() {
+			var min = arr[0], curr = arr[0];
+			for(i=0;i<5;i++){
+				curr = arr[i];
+				if(curr<min){
+					min=curr;
+				}
+			}
+			document.getElementById('min').innerHTML = min;
+		}
+		
+		printArray();
+		maxNum();
+		minNum();
+	</script>
+</html>
