@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>Max Sequence</title>
+	</head>
+	<body>
+		<div>findMaxSequence([3, 2, 3, 4, 2, 2, 4]) <p id="ms1"></p></div>
+		<div>findMaxSequence([3, 5, 4, 6, 1, 2, 3, 6, 10, 32]); <p id="ms2"></p></div>
+		<div>findMaxSequence([3, 2, 1]); <p id="ms3"></p></div>
+	</body>
+	<script>
+		var r = '';
+		
+		function findMaxSequence(arr){
+			var res = [];
+			var temp;
+			r = '';
+			for(i=0; i<arr.length; i++){
+				if(arr[i]<arr[i+1]){
+					res.push(arr[i]);
+				}
+			}
+			
+			for(i=0; i<res.length; i++){
+				if(!(isNaN(res[i]))){
+					temp = res[i].toString();
+					r = r.concat(temp);
+					r = r.concat(', ');
+				}
+				else{
+					r = 'no';
+				}
+			}
+		}
+		
+		findMaxSequence([3, 2, 3, 4, 2, 2, 4]);
+		document.getElementById('ms1').innerHTML = r;
+		findMaxSequence([3, 5, 4, 6, 1, 2, 3, 6, 10, 32]);
+		document.getElementById('ms2').innerHTML = r;
+		findMaxSequence([3, 2, 1]);
+		document.getElementById('ms3').innerHTML = r;
+	</script>
+</html>
