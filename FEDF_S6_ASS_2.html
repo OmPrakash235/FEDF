@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>FizzBuzz</title>
+	</head>
+	<body>
+	</body>
+	<script>
+		var fb = null;
+
+		for(i=1;i<=100;i++){
+			if(((i%3)==0) && ((i%5)==0)){
+				fb = 'FizzBuzz';
+			}
+			else if((i%3)==0){
+				fb = 'Fizz';
+			}
+			else if((i%5)==0){
+				fb = 'Buzz';
+			}
+			else{
+				fb = "";
+			}
+			var node = document.createElement("div");
+			var textnode = document.createTextNode(i + ' ' + fb);
+			node.appendChild(textnode);
+			document.getElementsByTagName("body")[0].appendChild(node);
+		}
+	</script>
+</html>
